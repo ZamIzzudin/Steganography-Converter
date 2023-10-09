@@ -1,0 +1,81 @@
+.input_area {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.form_image {
+    border: 2px solid gray;
+    border-radius: 8px;
+    width: 80%;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 1em;
+    gap: 16px;
+}
+
+.non_image_display_card {
+    width: 100%;
+    min-height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    cursor: pointer;
+    border: 2px dashed var(--gray4);
+}
+
+.non_image_display_card span {
+    font-size: 1.5em;
+}
+
+.non_image_display_card .text_browse {
+    color: var(--primaryColor2);
+    font-weight: 700;
+}
+
+.image_display_card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    box-sizing: border-box;
+    border: 2px solid var(--gray4);
+}
+
+.image_display_card span {
+    overflow: hidden;
+    display: flex;
+    align-items: flex-start;
+    color: black;
+    font-weight: 600;
+    font-size: 1em;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+.image_thumbnail {
+    max-width: 100%;
+    height: auto;
+}
+
+.cta_button {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.cta_button button{
+    width: 120px;
+    height: 40px;
+    border-radius: 12px !important;
+    background-color: rgba(0, 100, 148, 0.2) !important;
+}
