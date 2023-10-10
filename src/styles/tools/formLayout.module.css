@@ -34,6 +34,27 @@
     font-size: 1.5em;
 }
 
+@media screen and (max-width: 768px) {
+    .non_image_display_card span {
+        font-size: 1em;
+    }
+
+    .non_image_display_card {
+        min-height: 130px;
+    }
+
+    .cta_button button{
+        width: 120px !important;
+        height: 30px !important;
+        font-size: 0.75em !important;
+    }
+
+    .image_display_card span {
+        font-size: 0.75em !important;
+    }
+
+}
+
 .non_image_display_card .text_browse {
     color: var(--primaryColor2);
     font-weight: 700;

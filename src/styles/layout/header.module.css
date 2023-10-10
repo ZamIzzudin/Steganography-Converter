@@ -29,6 +29,10 @@ header {
     padding-right: 100px;
   }
 
+  .nav__container .menu{
+    cursor: pointer;
+  }
+
   .nav__container .menu svg{
     width: 28px;
     height: 28px;

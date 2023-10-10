@@ -16,7 +16,7 @@ function SteganographyEncrypt() {
 
   function embedImage() {
     if (rawImg === null) {
-      setSnackbarMessage('Please input an image!');
+      setSnackbarMessage('Please insert an image!');
       setSnackbarOpen(true);
       setSnackbarBackground('red');
     } else if (embedMessage === '') {

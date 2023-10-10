@@ -5,19 +5,24 @@ import Layout from "./components/Layout";
 import Steganography from "./pages/steganography";
 import Home from "./pages/home";
 
-function AppRouter(){
-    return(
-        <Router>
-            <Routes>
-                <Route exact path="/" element={<Home />} />
-            </Routes>
+function AppRouter() {
+  return (
+    <Router>
+      <Routes>
+        <Route exact path="/" element={<Home />} />
+      </Routes>
+      <Routes>
+        <Route
+          path="/steganography"
+          element={
             <Layout>
-                <Routes>
-                    <Route path="/steganography" element={<Steganography />} />
-                </Routes>
+              <Steganography />{" "}
             </Layout>
-        </Router>
-    )
+          }
+        />
+      </Routes>
+    </Router>
+  );
 }
 
 export default AppRouter;

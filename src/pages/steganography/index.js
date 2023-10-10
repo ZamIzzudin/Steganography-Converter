@@ -23,7 +23,9 @@ function Steganography() {
         </button>
       </div>
       
-      {selected === 0 ? <SteganographyEncrypt /> : selected === 1 ? <SteganographyDecrypt /> : null}
+      <div className={style.stegano__container}>
+        {selected === 0 ? <SteganographyEncrypt /> : selected === 1 ? <SteganographyDecrypt /> : null}
+      </div>
     </div>
   );
 }

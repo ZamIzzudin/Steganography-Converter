@@ -34,6 +34,10 @@
     font-weight: 600;
 }
 
+.stegano__container{
+  margin-bottom: 50px;
+}
+
 .stegano {
   min-height: 500px !important;
   display: flex;
@@ -47,6 +51,12 @@
   flex: 1;
   border: 0.5px solid #dae1e8;
   padding: 10px;
+}
+
+@media screen and (max-width: 992px){
+  .stegano{
+    flex-direction: column;
+  }
 }
 
 .stegano .image__input{
@@ -63,6 +73,49 @@
   align-self: flex-end;
   margin-bottom: 15px;
   margin-right: 15px;
+}
+
+@media screen and (max-width: 768px){
+  .image__input .encrypt{
+    width: 100px;
+    height: 50px;
+    font-size: 0.75em;
+    margin-right: 15px;
+    margin-bottom: 0 !important;
+    margin-top: 15px;
+  }
+
+  .stegano .image__input,
+  .stegano .message__input {
+    flex: 1;
+  }
+  .stegano .message__input textarea {
+    font-size: 0.75em;
+  }
+
+  .content__copy{
+    width: 40px !important;
+    height: 35px !important;
+  }
+
+  .content__copy svg{
+    width: 16px !important;
+    height: 16px !important;
+  }
+
+  .tab .tab__button {
+    min-width: 130px;
+    min-height: 40px;
+  }
+
+  .tab .tab__button svg{
+    width: 21px !important;
+    height: 21px !important;
+  }
+
+  .tab .tab__button span{
+    font-size: 0.75em !important;
+  }
 }
 
 .stegano .message__input{

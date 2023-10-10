@@ -32,3 +32,18 @@ aside {
 li {
     list-style: none;
 }
+
+.sidebar-overlay {
+    display: none;
+    height: 100%;
+    width: 100%;
+    z-index: 99;
+    background-color: rgba(0, 0, 0, 0.6);
+    position: fixed;
+    top: 60px;
+    left: 0;
+  }
+  
+  .opened {
+    display: block;
+  }

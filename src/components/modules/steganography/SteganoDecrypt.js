@@ -16,7 +16,7 @@ function SteganographyDecrypt() {
 
   function extractImage() {
     if (embededImg === null) {
-      setSnackbarMessage('Please input an image!');
+      setSnackbarMessage('Please insert an image!');
       setSnackbarOpen(true);
       setSnackbarBackground('red');
       console.info("test")
