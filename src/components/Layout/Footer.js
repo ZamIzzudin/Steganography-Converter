@@ -6,7 +6,7 @@ import { Avatar } from '@mui/material'
 
 import profile1 from '../../assets/images/user1.png'
 import profile2 from '../../assets/images/user2.jpg'
-import profile3 from '../../assets/images/user3.jpg'
+// import profile3 from '../../assets/images/user3.jpg'
 import profile4 from '../../assets/images/cewe-wildan.png'
 
 
