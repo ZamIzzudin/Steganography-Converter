@@ -16,7 +16,7 @@ function AppRouter() {
           path="/steganography"
           element={
             <Layout>
-              <Steganography />{" "}
+              <Steganography />
             </Layout>
           }
         />

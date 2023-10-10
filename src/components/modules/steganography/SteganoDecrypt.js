@@ -53,10 +53,10 @@ function SteganographyDecrypt() {
       <div className={style.image__input}>
         <InputImage getData={setEmbededImg} />
       
-        <button onClick={() => extractImage()} className={style.encrypt}>Decrypt Now</button>
+        <button onClick={() => extractImage()} className={style.encrypt}>Extract Message</button>
       </div>
       <div className={style.message__input}>
-        <textarea readOnly placeholder='your extracted message will appear here' value={extractMessage} />
+        <textarea disabled readOnly placeholder='your extracted message will appear here' value={extractMessage} />
         
         {extractMessage !== '' && (
           <>

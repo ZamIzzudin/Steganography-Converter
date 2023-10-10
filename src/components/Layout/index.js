@@ -2,6 +2,7 @@ import React from "react";
 
 import Header from "./Header";
 import Sidebar from "./Sidebar";
+import Footer from "./Footer";
 
 const Layout = ({ children }) => {
 
@@ -15,6 +16,7 @@ const Layout = ({ children }) => {
       <Header />
       <Sidebar />
       <main>{children}</main>
+      <Footer />
       <div className="sidebar-overlay" onClick={removeOverlay}></div>
     </div>
   );

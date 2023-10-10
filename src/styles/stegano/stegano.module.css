@@ -146,6 +146,11 @@
   background-color: #f7f7f7;
 }
 
+.stegano .message__input textarea::placeholder {
+  font-size: 1em;
+  text-align: center;
+}
+
 .stegano .message__input textarea:focus {
   outline: none;
   border: none;

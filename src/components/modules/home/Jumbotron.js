@@ -13,7 +13,7 @@ export default function Jumbotron() {
         <div className={style.jumbotron}>
             <div className={style.jumbotron_content}>
                 <h1>STEGANOGRAPHY</h1>
-                <p>Embed, encrypt, and decrypt your text with Steganography</p>
+                <p>Embed and extract your text within an image with Steganography</p>
                 <Link to="/steganography">
                     <button>Get Started</button>
                 </Link>

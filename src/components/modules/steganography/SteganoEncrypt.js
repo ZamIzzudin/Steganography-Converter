@@ -37,7 +37,7 @@ function SteganographyEncrypt() {
         <div className={style.image__input}>
           <InputImage getData={setRawImg} />
         
-          <button onClick={() => embedImage()} className={style.encrypt}>Encrypt Now</button>
+          <button onClick={() => embedImage()} className={style.encrypt}>Embed Message</button>
           <CustomSnackbar
               open={snackbarOpen}
               message={snackbarMessage}

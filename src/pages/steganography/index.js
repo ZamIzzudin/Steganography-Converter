@@ -15,11 +15,11 @@ function Steganography() {
       <div className={style.tab}>
         <button className={`${style.tab__button} ${selected === 0 ? style.active : ''}`} onClick={() => setSelected(0)}>
             <LockIcon />
-            <span>Encrypt</span>
+            <span>Embed</span>
         </button>
         <button className={`${style.tab__button} ${selected === 1 ? style.active : ''}`} onClick={() => setSelected(1)}>
             <LockOpenIcon />
-            <span>Decrypt</span>
+            <span>Extract</span>
         </button>
       </div>
       

@@ -2,16 +2,16 @@ import React from 'react'
 
 import style from '../../styles/layout/header.module.css'
 
-import MenuIcon from '@mui/icons-material/Menu';
+// import MenuIcon from '@mui/icons-material/Menu';
 
 import logo from '../../assets/images/logo.png'
 
 const Header = () => {
 
-  const sidebarOverlay = () => {
-    document.querySelector(".sidebar-overlay").classList.toggle("opened");
-    document.querySelector(".sidebar").classList.toggle("active");
-  };
+  // const sidebarOverlay = () => {
+  //   document.querySelector(".sidebar-overlay").classList.toggle("opened");
+  //   document.querySelector(".sidebar").classList.toggle("active");
+  // };
   return (
     <header>
       <div className={`container ${style.nav__container}`}>
@@ -19,9 +19,9 @@ const Header = () => {
           <img src={logo} alt='logo' />
           <span>Steganography</span>
         </div>
-        <div className={style.menu} onClick={sidebarOverlay}>
+        {/* <div className={style.menu} onClick={sidebarOverlay}>
           <MenuIcon />
-        </div>
+        </div> */}
         
       </div>
     </header>
