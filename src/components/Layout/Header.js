@@ -1,10 +1,11 @@
-import React from 'react'
+import { Link } from "react-router-dom"
+
 
 import style from '../../styles/layout/header.module.css'
 
 // import MenuIcon from '@mui/icons-material/Menu';
 
-import logo from '../../assets/images/logo.png'
+import logo from '../../assets/images/logo.jpg'
 
 const Header = () => {
 
@@ -16,13 +17,15 @@ const Header = () => {
     <header>
       <div className={`container ${style.nav__container}`}>
         <div className={style.logo}>
-          <img src={logo} alt='logo' />
-          <span>Steganography</span>
+          <Link to="/">
+            <img src={logo} alt='logo' />
+          </Link>
+          <span>Steganography Converter</span>
         </div>
         {/* <div className={style.menu} onClick={sidebarOverlay}>
           <MenuIcon />
         </div> */}
-        
+
       </div>
     </header>
   )

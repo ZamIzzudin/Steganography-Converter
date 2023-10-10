@@ -1,39 +1,44 @@
 header {
-    height: 63px;
-    background-color: var(--white);
-    display: flex;
-    align-items: center;
-  }
-  
-  .nav__container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 100%;
-    width: 100%;
-  }
-  
-  .nav__container .logo {
-    display: flex;
-    height: 70%;
-  }
-  
-  .nav__container .logo span {
-    display: flex;
-    align-items: center;
-    padding-left: 10px; 
-    font-weight: 600;
-  }
-  
-  .nav__container .description{
-    padding-right: 100px;
-  }
+  height: 63px;
+  background-color: var(--white);
+  display: flex;
+  align-items: center;
+}
 
-  .nav__container .menu{
-    cursor: pointer;
-  }
+.nav__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  width: 100%;
+}
 
-  .nav__container .menu svg{
-    width: 28px;
-    height: 28px;
-  }
+.nav__container .logo {
+  display: flex;
+  height: 70%;
+}
+
+.nav__container .logo a {
+  max-height: 200px;
+  display: flex;
+}
+
+.nav__container .logo span {
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+  font-weight: 600;
+}
+
+.nav__container .description {
+  padding-right: 100px;
+}
+
+.nav__container .menu {
+  cursor: pointer;
+}
+
+.nav__container .menu svg {
+  width: 28px;
+  height: 28px;
+}

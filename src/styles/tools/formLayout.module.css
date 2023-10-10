@@ -43,7 +43,7 @@
         min-height: 130px;
     }
 
-    .cta_button button{
+    .cta_button button {
         width: 120px !important;
         height: 30px !important;
         font-size: 0.75em !important;
@@ -94,9 +94,11 @@
     gap: 20px;
 }
 
-.cta_button button{
+.cta_button button {
     width: 120px;
     height: 40px;
-    border-radius: 12px !important;
-    background-color: rgba(0, 100, 148, 0.2) !important;
+    border-radius: 5px !important;
+    color: var(--white);
+    background-color: var(--orange);
+    border: 2px solid var(--orange);
 }

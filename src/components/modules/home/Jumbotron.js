@@ -12,8 +12,8 @@ export default function Jumbotron() {
     return (
         <div className={style.jumbotron}>
             <div className={style.jumbotron_content}>
-                <h1>STEGANOGRAPHY</h1>
-                <p>Embed and extract your text within an image with Steganography</p>
+                <h1>STEGANOGRAPHY CONVERTER</h1>
+                <p>Embed and extract your hidden message within an image with Steganography</p>
                 <Link to="/steganography">
                     <button>Get Started</button>
                 </Link>

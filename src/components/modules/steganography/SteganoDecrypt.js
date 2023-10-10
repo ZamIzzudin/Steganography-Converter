@@ -38,7 +38,7 @@ function SteganographyDecrypt() {
     textArea.select();
     document.execCommand('copy');
     document.body.removeChild(textArea);
-  
+
     setSnackbarMessage('Successfully copied!');
     setSnackbarOpen(true);
     setSnackbarBackground('green');
@@ -52,12 +52,12 @@ function SteganographyDecrypt() {
     <div className={style.stegano}>
       <div className={style.image__input}>
         <InputImage getData={setEmbededImg} />
-      
+
         <button onClick={() => extractImage()} className={style.encrypt}>Extract Message</button>
       </div>
       <div className={style.message__input}>
-        <textarea disabled readOnly placeholder='your extracted message will appear here' value={extractMessage} />
-        
+        <textarea disabled readOnly placeholder='Your extracted message will appear here' value={extractMessage} />
+
         {extractMessage !== '' && (
           <>
             <button className={style.content__copy} onClick={handleCopyMessage}>
