@@ -58,7 +58,7 @@
 
 @media only screen and (max-width: 768px) {
     .jumbotron_content h1 {
-        font-size: 4em;
+        font-size: 2.5em;
     }
 
     .jumbotron_content p {
@@ -67,5 +67,13 @@
 
     .jumbotron_content a button {
         font-size: .8em;
+    }
+
+    .jumbotron_content {
+        gap: 15px;
+    }
+
+    .jumbotron_content {
+       padding-bottom: 85px;
     }
 }
