@@ -6,9 +6,7 @@ import { Avatar } from '@mui/material'
 
 import profile1 from '../../assets/images/user1.png'
 import profile2 from '../../assets/images/user2.jpg'
-// import profile3 from '../../assets/images/user3.jpg'
-import profile4 from '../../assets/images/cewe-wildan.png'
-
+import profile3 from '../../assets/images/user3.jpg'
 
 import { useMediaQuery } from 'react-responsive'
 
@@ -23,7 +21,7 @@ const Footer = () => {
                 <div className={style.footer__content}>
                     <div className={style.content__item}>
                         <div className={style.item__image}>
-                            <Avatar sx={{ width: 65, height: 65 }} src={profile4} alt='Wildan Nur Rahman' />
+                            <Avatar sx={{ width: 65, height: 65 }} src={profile3} alt='Wildan Nur Rahman' />
                         </div>
                         <div className={style.item__details}>
                             <h5>Wildan Nur Rahman</h5>
