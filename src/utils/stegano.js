@@ -57,7 +57,9 @@ const stegano = (() => {
                 if (charCode === 0) {
                     break;
                 } else if (charCode <= 31 || charCode >= 127) {
-                    break;
+                    if(charCode != 13){
+                        break;
+                    }
                 }
 
                 const char = String.fromCharCode(charCode);
