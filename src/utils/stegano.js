@@ -83,11 +83,10 @@ const stegano = (() => {
 
             const imageData = ctx.getImageData(0, 0, canvas.width, canvas.height);
 
-            // Tambahkan delimiter untuk menandai akhir pesan
-            message += '~';
+            const hiddenMessage = '{' + message + '}'
 
-            // Konversi pesan ke dalam biner
-            const binaryMessage = messageToBinary(message);
+            // Konversi pesan ke dalam biner, dan menambahkan delimiter
+            const binaryMessage = messageToBinary(hiddenMessage)
 
             let binaryIndex = 0;
 
@@ -134,10 +133,13 @@ const stegano = (() => {
                 // Ambil LSB (Least Significant Bit) dari setiap kanal warna
                 const bit = (imageData.data[i] & 1).toString();
                 binaryMessage += bit;
-                console.log(binaryMessage)
+
                 // Cek apakah pesan telah selesai (delimiter ditemukan)
-                if (binaryMessage.slice(-8) === '01111110') {
-                    binaryMessage = binaryMessage.slice(0, -8); // Hapus delimiter
+                if (i === 7 && binaryMessage !== messageToBinary('{')) {
+                    binaryMessage = messageToBinary('Content Not Found')
+                    break
+                } else if (binaryMessage.slice(-8) === messageToBinary('}')) {
+                    binaryMessage = binaryMessage.slice(8, -8); // Hapus delimiter
                     break;
                 }
             }
