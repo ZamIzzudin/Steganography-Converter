@@ -54,12 +54,8 @@ const stegano = (() => {
                 charCode = imageData.data[i];
 
                 // Jika nilai karakter adalah null (delimiter), berhenti
-                if (charCode === 0) {
+                if (charCode === 0 || (charCode <= 31 && charCode !== 13) || charCode >= 127) {
                     break;
-                } else if (charCode <= 31 || charCode >= 127) {
-                    if(charCode != 13){
-                        break;
-                    }
                 }
 
                 const char = String.fromCharCode(charCode);
